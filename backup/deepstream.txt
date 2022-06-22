@@ -1,0 +1,21 @@
+Dahua
+rtsp://admin:technonia8123@192.168.1.108:554/cam/realmonitor?channel=1&subtype=0
+
+Hanwha
+rtsp://admin:nonia8123!@192.168.10.100:554/profile2/media.smp
+rtsp://admin:nonia8123!@192.168.10.101:554/profile2/media.smp
+
+gstreamer1.0-plugins-ugly
+
+
+edit file name: source30_1080p_dec_infer-resnet_tiled_display_int8.txt
+
+
+**************************** PYTHON ***************************************
+[deepstream-imagedata-multistream]
+
+sudo python3 deepstream_imagedata-multistream.py 'rtsp://admin:technonia8123@192.168.1.108:554/cam/realmonitor?channel=1&subtype=0' 'rtsp://admin:nonia8123\!@192.168.1.100:554/profile2/media.smp' frames
+
+
+sudo python3 deepstream_imagedata-multistream.py 'rtsp://admin:nonia8123\!@192.168.1.100:554/profile2/media.smp' 'rtsp://admin:nonia8123\!@192.168.1.101:554/profile2/media.smp' frames
+

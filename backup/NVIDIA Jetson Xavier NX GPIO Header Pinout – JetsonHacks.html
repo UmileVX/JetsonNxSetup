@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)https://www.jetsonhacks.com/nvidia-jetson-xavier-nx-gpio-header-pinout/ -->
+<html class="js mh-one-sb jetpack-lazy-images-js-enabled" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<title>NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="https://secure.gravatar.com/">
+<link rel="dns-prefetch" href="https://www.google.com/">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="dns-prefetch" href="https://v0.wordpress.com/">
+<link rel="dns-prefetch" href="https://i0.wp.com/">
+<link rel="dns-prefetch" href="https://i1.wp.com/">
+<link rel="dns-prefetch" href="https://i2.wp.com/">
+<link rel="dns-prefetch" href="https://widgets.wp.com/">
+<link rel="dns-prefetch" href="https://s0.wp.com/">
+<link rel="dns-prefetch" href="https://0.gravatar.com/">
+<link rel="dns-prefetch" href="https://1.gravatar.com/">
+<link rel="dns-prefetch" href="https://2.gravatar.com/">
+<link rel="dns-prefetch" href="https://jetpack.wordpress.com/">
+<link rel="dns-prefetch" href="https://s1.wp.com/">
+<link rel="dns-prefetch" href="https://s2.wp.com/">
+<link rel="dns-prefetch" href="https://public-api.wordpress.com/">
+<link rel="dns-prefetch" href="https://c0.wp.com/">
+<link rel="alternate" type="application/rss+xml" title="JetsonHacks » Feed" href="https://www.jetsonhacks.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="JetsonHacks » Comments Feed" href="https://www.jetsonhacks.com/comments/feed/">
+		<script id="twitter-wjs" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/widgets.js"></script><script id="twitcount_plugins" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/twitcount.js"></script><script src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/cb=gapi.loaded_2" async=""></script><script src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/f(5).txt"></script><script src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/sdk.js" async="" crossorigin="anonymous"></script><script src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/cb=gapi.loaded_1" async=""></script><script src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/cb=gapi(1).loaded_0" async=""></script><script type="text/javascript" async="" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-Cr+nkafY9HA+49PzRTzvm9wOv1bIcrLbq3GdihimIUtkckBPSema3//0/Jmxo4ok"></script><script id="facebook-jssdk" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/sdk(1).js"></script><script src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/f(6).txt"></script><script src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/f(7).txt" id="google_shimpl"></script><script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.jetsonhacks.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.2"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/wp-emoji-release.min.js" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="dashicons-css" href="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/dashicons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="admin-bar-css" href="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/admin-bar.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="amp-icons-css" href="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/amp-icons.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/style.min.css" type="text/css" media="all">
+<style id="wp-block-library-inline-css" type="text/css">
+.has-text-align-justify{text-align:justify;}
+</style>
+<link rel="stylesheet" id="bp-login-form-block-css" href="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/login-form.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="bp-member-block-css" href="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/member.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="bp-members-block-css" href="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/members.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="bp-dynamic-members-block-css" href="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/dynamic-members.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="bp-sitewide-notices-block-css" href="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/sitewide-notices.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="mediaelement-css" href="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/mediaelementplayer-legacy.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-mediaelement-css" href="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/wp-mediaelement.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="bp-admin-bar-css" href="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/admin-bar.min(1).css" type="text/css" media="all">
+<link rel="stylesheet" id="bp-legacy-css-css" href="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/buddypress.min.css" type="text/css" media="screen">
+<link rel="stylesheet" id="contact-form-7-css" href="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="ssb-front-css-css" href="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/front.css" type="text/css" media="all">
+<!-- `jetpack_likes` is included in the concatenated jetpack.css -->
+<link rel="stylesheet" id="mh-magazine-css" href="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="mh-font-awesome-css" href="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/font-awesome.min.css" type="text/css" media="all">
+<link crossorigin="anonymous" rel="stylesheet" id="mh-google-fonts-css" href="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/css(1)" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack_css-css" href="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/jetpack.css" type="text/css" media="all">
+<script type="text/javascript" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/jquery.min.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="bp-confirm-js-extra">
+/* <![CDATA[ */
+var BP_Confirm = {"are_you_sure":"Are you sure?"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/confirm.min.js" id="bp-confirm-js"></script>
+<script type="text/javascript" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/widget-members.min.js" id="bp-widget-members-js"></script>
+<script type="text/javascript" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/jquery-query.min.js" id="bp-jquery-query-js"></script>
+<script type="text/javascript" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/jquery-cookie.min.js" id="bp-jquery-cookie-js"></script>
+<script type="text/javascript" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/jquery-scroll-to.min.js" id="bp-jquery-scroll-to-js"></script>
+<script type="text/javascript" id="bp-legacy-js-js-extra">
+/* <![CDATA[ */
+var BP_DTheme = {"accepted":"Accepted","close":"Close","comments":"comments","leave_group_confirm":"Are you sure you want to leave this group?","mark_as_fav":"Favorite","my_favs":"My Favorites","rejected":"Rejected","remove_fav":"Remove Favorite","show_all":"Show all","show_all_comments":"Show all comments for this thread","show_x_comments":"Show all comments (%d)","unsaved_changes":"Your profile has unsaved changes. If you leave the page, the changes will be lost.","view":"View","store_filter_settings":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/buddypress.min.js" id="bp-legacy-js-js"></script>
+<script type="text/javascript" id="ssb-front-js-js-extra">
+/* <![CDATA[ */
+var SSB = {"ajax_url":"https:\/\/www.jetsonhacks.com\/wp-admin\/admin-ajax.php","fb_share_nonce":"46bf62bbb1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/front.js" id="ssb-front-js-js"></script>
+<script type="text/javascript" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/scripts.js" id="mh-scripts-js"></script>
+<link rel="https://api.w.org/" href="https://www.jetsonhacks.com/wp-json/"><link rel="alternate" type="application/json" href="https://www.jetsonhacks.com/wp-json/wp/v2/pages/12098"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.jetsonhacks.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.jetsonhacks.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.8.2">
+<link rel="canonical" href="https://www.jetsonhacks.com/nvidia-jetson-xavier-nx-gpio-header-pinout/">
+<link rel="shortlink" href="https://wp.me/P7ZgI9-398">
+<link rel="alternate" type="application/json+oembed" href="https://www.jetsonhacks.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.jetsonhacks.com%2Fnvidia-jetson-xavier-nx-gpio-header-pinout%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.jetsonhacks.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.jetsonhacks.com%2Fnvidia-jetson-xavier-nx-gpio-header-pinout%2F&amp;format=xml">
+
+	<script type="text/javascript">var ajaxurl = 'https://www.jetsonhacks.com/wp-admin/admin-ajax.php';</script>
+
+ <style media="screen">
+
+		 /*inline margin*/
+	
+	
+	
+	
+	
+	
+			 /*margin-digbar*/
+
+	
+	
+	
+	
+	
+	
+	
+</style>
+
+<!-- Open Graph Meta Tags generated by Simple Social Buttons 3.2.4 -->
+<meta property="og:title" content="NVIDIA Jetson Xavier NX GPIO Header Pinout - JetsonHacks">
+<meta property="og:description" content="Pinout for the NVIDIA Jetson Xavier NX Read more ...">
+<meta property="og:url" content="https://www.jetsonhacks.com/nvidia-jetson-xavier-nx-gpio-header-pinout/">
+<meta property="og:site_name" content="JetsonHacks">
+<meta property="og:image" content="https://www.jetsonhacks.com/wp-content/uploads/2020/06/Pin1XNX-scaled.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="Pinout for the NVIDIA Jetson Xavier NX Read more ...">
+<meta name="twitter:title" content="NVIDIA Jetson Xavier NX GPIO Header Pinout - JetsonHacks">
+<meta property="twitter:image" content="https://www.jetsonhacks.com/wp-content/uploads/2020/06/Pin1XNX-scaled.jpg">
+<style type="text/css">img#wpstats{display:none}</style>
+		<style type="text/css">
+.mh-navigation li:hover, .mh-navigation ul li:hover > ul, .mh-main-nav-wrap, .mh-main-nav, .mh-social-nav li a:hover, .entry-tags li, .mh-slider-caption, .mh-widget-layout8 .mh-widget-title .mh-footer-widget-title-inner, .mh-widget-col-1 .mh-slider-caption, .mh-widget-col-1 .mh-posts-lineup-caption, .mh-carousel-layout1, .mh-spotlight-widget, .mh-social-widget li a, .mh-author-bio-widget, .mh-footer-widget .mh-tab-comment-excerpt, .mh-nip-item:hover .mh-nip-overlay, .mh-widget .tagcloud a, .mh-footer-widget .tagcloud a, .mh-footer, .mh-copyright-wrap, input[type=submit]:hover, #infinite-handle span:hover { background: #333f49; }
+.mh-extra-nav-bg { background: rgba(51, 63, 73, 0.2); }
+.mh-slider-caption, .mh-posts-stacked-title, .mh-posts-lineup-caption { background: #333f49; background: rgba(51, 63, 73, 0.8); }
+@media screen and (max-width: 900px) { #mh-mobile .mh-slider-caption, #mh-mobile .mh-posts-lineup-caption { background: rgba(51, 63, 73, 1); } }
+.slicknav_menu, .slicknav_nav ul, #mh-mobile .mh-footer-widget .mh-posts-stacked-overlay { border-color: #333f49; }
+.mh-copyright, .mh-copyright a { color: #fff; }
+.mh-widget-layout4 .mh-widget-title { background: #6392bf; background: rgba(99, 146, 191, 0.6); }
+.mh-preheader, .mh-wide-layout .mh-subheader, .mh-ticker-title, .mh-main-nav li:hover, .mh-footer-nav, .slicknav_menu, .slicknav_btn, .slicknav_nav .slicknav_item:hover, .slicknav_nav a:hover, .mh-back-to-top, .mh-subheading, .entry-tags .fa, .entry-tags li:hover, .mh-widget-layout2 .mh-widget-title, .mh-widget-layout4 .mh-widget-title-inner, .mh-widget-layout4 .mh-footer-widget-title, .mh-widget-layout5 .mh-widget-title-inner, .mh-widget-layout6 .mh-widget-title, #mh-mobile .flex-control-paging li a.flex-active, .mh-image-caption, .mh-carousel-layout1 .mh-carousel-caption, .mh-tab-button.active, .mh-tab-button.active:hover, .mh-footer-widget .mh-tab-button.active, .mh-social-widget li:hover a, .mh-footer-widget .mh-social-widget li a, .mh-footer-widget .mh-author-bio-widget, .tagcloud a:hover, .mh-widget .tagcloud a:hover, .mh-footer-widget .tagcloud a:hover, .mh-posts-stacked-meta, .page-numbers:hover, .mh-loop-pagination .current, .mh-comments-pagination .current, .pagelink, a:hover .pagelink, input[type=submit], #infinite-handle span { background: #6392bf; }
+.mh-main-nav-wrap .slicknav_nav ul, blockquote, .mh-widget-layout1 .mh-widget-title, .mh-widget-layout3 .mh-widget-title, .mh-widget-layout5 .mh-widget-title, .mh-widget-layout8 .mh-widget-title:after, #mh-mobile .mh-slider-caption, .mh-carousel-layout1, .mh-spotlight-widget, .mh-author-bio-widget, .mh-author-bio-title, .mh-author-bio-image-frame, .mh-video-widget, .mh-tab-buttons, .bypostauthor .mh-comment-meta, textarea:hover, input[type=text]:hover, input[type=email]:hover, input[type=tel]:hover, input[type=url]:hover { border-color: #6392bf; }
+.mh-dropcap, .mh-carousel-layout1 .flex-direction-nav a, .mh-carousel-layout2 .mh-carousel-caption, .mh-posts-digest-small-category, .mh-posts-lineup-more, .bypostauthor .mh-comment-meta-author:after, .mh-comment-meta-links .comment-reply-link:before, #respond #cancel-comment-reply-link:before { color: #6392bf; }
+.mh-subheader, .page-numbers, a .pagelink, .mh-widget-layout3 .mh-widget-title, .mh-widget .search-form, .mh-tab-button, .mh-tab-content, .mh-nip-widget, .mh-magazine-facebook-page-widget, .mh-social-widget, .mh-posts-horizontal-widget, .mh-ad-spot { background: #e9ecf6; }
+.mh-tab-post-item { border-color: rgba(255, 255, 255, 0.3); }
+.mh-tab-comment-excerpt { background: rgba(255, 255, 255, 0.6); }
+.entry-content a, .mh-comment-content a { color: #1e4bc9; }
+a:hover, .entry-content a:hover, .mh-comment-content a:hover, #respond a:hover, .mh-meta a:hover, .mh-breadcrumb a:hover, .mh-tabbed-widget a:hover { color: #dd3333; }
+</style>
+<!--[if lt IE 9]>
+<script src="https://www.jetsonhacks.com/wp-content/themes/mh-magazine/js/css3-mediaqueries.js"></script>
+<![endif]-->
+<link rel="amphtml" href="https://www.jetsonhacks.com/nvidia-jetson-xavier-nx-gpio-header-pinout/?amp">			<style type="text/css">
+				/* If html does not have either class, do not show lazy loaded images. */
+				html:not( .jetpack-lazy-images-js-enabled ):not( .js ) .jetpack-lazy-image {
+					display: none;
+				}
+			</style>
+			<script>
+				document.documentElement.classList.add(
+					'jetpack-lazy-images-js-enabled'
+				);
+			</script>
+		<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+	<style type="text/css" media="screen">
+	html { margin-top: 32px !important; }
+	* html body { margin-top: 32px !important; }
+	@media screen and ( max-width: 782px ) {
+		html { margin-top: 46px !important; }
+		* html body { margin-top: 46px !important; }
+	}
+</style>
+	
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="NVIDIA Jetson Xavier NX GPIO Header Pinout">
+<meta property="og:url" content="https://www.jetsonhacks.com/nvidia-jetson-xavier-nx-gpio-header-pinout/">
+<meta property="og:description" content="Pinout for the NVIDIA Jetson Xavier NX">
+<meta property="article:published_time" content="2020-06-17T18:43:21+00:00">
+<meta property="article:modified_time" content="2020-07-26T01:09:06+00:00">
+<meta property="og:site_name" content="JetsonHacks">
+<meta property="og:image" content="https://i2.wp.com/www.jetsonhacks.com/wp-content/uploads/2020/06/Pin1XNX-scaled.jpg?fit=1200%2C800&amp;ssl=1">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="800">
+<meta property="og:image:alt" content="Pin 1 - Jetson Xavier NX">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:site" content="@jetsonhacks">
+<meta name="twitter:text:title" content="NVIDIA Jetson Xavier NX GPIO Header Pinout">
+<meta name="twitter:image" content="https://i2.wp.com/www.jetsonhacks.com/wp-content/uploads/2020/06/Pin1XNX-scaled.jpg?fit=1200%2C800&amp;ssl=1&amp;w=640">
+<meta name="twitter:image:alt" content="Pin 1 - Jetson Xavier NX">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- End Jetpack Open Graph Tags -->
+<link rel="stylesheet" type="text/css" id="wp-custom-css" href="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/saved_resource"><meta http-equiv="origin-trial" content="AxujKG9INjsZ8/gUq8+dTruNvk7RjZQ1oFhhgQbcTJKDnZfbzSTE81wvC2Hzaf3TW4avA76LTZEMdiedF1vIbA4AAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="Azuce85ORtSnWe1MZDTv68qpaW3iHyfL9YbLRy0cwcCZwVnePnOmkUJlG8HGikmOwhZU22dElCcfrfX2HhrBPAkAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A16nvcdeoOAqrJcmjLRpl1I6f3McDD8EfofAYTt/P/H4/AWwB99nxiPp6kA0fXoiZav908Z8etuL16laFPUdfQsAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AxBHdr0J44vFBQtZUqX9sjiqf5yWZ/OcHRcRMN3H9TH+t90V/j3ENW6C8+igBZFXMJ7G3Pr8Dd13632aLng42wgAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A88BWHFjcawUfKU3lIejLoryXoyjooBXLgWmGh+hNcqMK44cugvsI5YZbNarYvi3roc1fYbHA1AVbhAtuHZflgEAAAB2eyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IlRydXN0VG9rZW5zIiwiZXhwaXJ5IjoxNjUyNzc0NDAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A8FHS1NmdCwGqD9DwOicnHHY+y27kdWfxKa0YHSGDfv0CSpDKRHTQdQmZVPDUdaFWUsxdgVxlwAd6o+dhJykPA0AAACWeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="A8zdXi6dr1hwXEUjQrYiyYQGlU3557y5QWDnN0Lwgj9ePt66XMEvNkVWOEOWPd7TP9sBQ25X0Q15Lr1Nn4oGFQkAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="A4/Htern2udN9w3yJK9QgWQxQFruxOXsXL7cW60DyCl0EZFGCSme/J33Q/WzF7bBkVvhEWDlcBiUyZaim5CpFQwAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><link rel="preload" href="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/f(8).txt" as="script"><script type="text/javascript" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/f(8).txt"></script><link rel="preload" href="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/f(9).txt" as="script"><script type="text/javascript" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/f(9).txt"></script><link rel="preload" href="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/f(8).txt" as="script"><script type="text/javascript" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/f(8).txt"></script><link rel="preload" href="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/f(9).txt" as="script"><script type="text/javascript" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/f(9).txt"></script><style>.gc-bubbleDefault{table-layout:auto!important}.gc-bubbleDefault,.gc-reset{background-color:transparent!important;text-align:left;padding:0!important;margin:0!important;border:0!important}.pls-bubbleTop{border-bottom:1px solid #ccc!important}.pls-contentLeft,.pls-topTail,.pls-vertShimLeft{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/border_3.gif)!important}.pls-topTail{background-repeat:repeat-x!important;background-position:bottom!important}.pls-vertShim{background-color:#fff!important;text-align:right}.tbl-grey .pls-vertShim{background-color:#f5f5f5!important}.pls-vertShimLeft{background-repeat:repeat-y!important;background-position:100%!important;height:4px}.pls-vertShimRight{height:4px}.pls-confirm-container .pls-vertShim{background-color:#fff3c2!important}.pls-contentWrap{background-color:#fff!important;position:relative!important;vertical-align:top}.pls-contentLeft{background-repeat:repeat-y;background-position:100%;vertical-align:top}.pls-dropRight{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleDropR_3.png)!important;background-repeat:repeat-y!important}.pls-dropBL,.pls-dropBottom,.pls-dropRight,.pls-dropTR .pls-dropBR,.pls-tailleft,.pls-vert,.pls-vert img{vertical-align:top}.pls-dropBottom{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleDropB_3.png)!important;background-repeat:repeat-x!important;width:100%}.pls-topLeft{text-align:right}.pls-topLeft,.pls-topRight{background:inherit!important;vertical-align:bottom}.pls-topRight{text-align:left}.pls-bottomLeft{background:inherit!important;text-align:right}.pls-bottomRight{background:inherit!important;text-align:left;vertical-align:top}.pls-tailbottom,.pls-tailleft,.pls-tailright,.pls-tailtop{display:none;position:relative}.pls-dropBL,.pls-dropBR,.pls-dropTR,.pls-tailbottom,.pls-tailleft,.pls-tailright,.pls-tailtop{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleSprite_3.png)!important;background-repeat:no-repeat}.tbl-grey .pls-dropBL,.tbl-grey .pls-dropBR,.tbl-grey .pls-dropTR,.tbl-grey .pls-tailbottom,.tbl-grey .pls-tailleft,.tbl-grey .pls-tailright,.tbl-grey .pls-tailtop{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleSprite-grey.png)!important}.pls-tailbottom{background-position:-23px 0}.pls-confirm-container .pls-tailbottom{background-position:-23px -10px}.pls-tailtop{background-position:-19px -20px}.pls-tailright{background-position:0 0}.pls-tailleft{background-position:-10px 0}.pls-tailtop{vertical-align:top}.gc-bubbleDefault td{line-height:0;font-size:0}.pls-tailbottom,.pls-topLeft img,.pls-topRight img{vertical-align:bottom}.bubbleDropTR,.pls-bottomLeft,.pls-bottomLeft img,.pls-dropBottom img,.pls-dropBottomL img,.pls-dropBottomR img{vertical-align:top}.pls-dropTR{background-position:0 -22px}.pls-dropBR{background-position:0 -27px}.pls-dropBL{background-position:0 -16px}.pls-spacerbottom,.pls-spacerleft,.pls-spacerright,.pls-spacertop{position:static!important}.pls-spinner{bottom:0;position:absolute;left:0;margin:auto;right:0;top:0}</style><style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+.fb_mpn_mobile_landing_page_slide_out{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_out_from_left{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out_from_left;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_up{animation-duration:500ms;animation-name:fb_mpn_landing_page_slide_up;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_in{animation-duration:300ms;animation-name:fb_mpn_bounce_in;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out{animation-duration:300ms;animation-name:fb_mpn_bounce_out;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out_v2{animation-duration:300ms;animation-name:fb_mpn_fade_out;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_from_left{animation-duration:300ms;animation-name:fb_bounce_in_from_left;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_from_left{animation-duration:300ms;animation-name:fb_bounce_out_from_left;transition-timing-function:ease-in}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}@keyframes fb_mpn_landing_page_slide_out{0%{margin:0 12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;margin:0 24px;width:60px}}@keyframes fb_mpn_landing_page_slide_out_from_left{0%{left:12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;left:12px;width:60px}}@keyframes fb_mpn_landing_page_slide_up{0%{bottom:0;opacity:0}100%{bottom:24px;opacity:1}}@keyframes fb_mpn_bounce_in{0%{opacity:.5;top:100%}100%{opacity:1;top:0}}@keyframes fb_mpn_fade_out{0%{bottom:30px;opacity:1}100%{bottom:0;opacity:0}}@keyframes fb_mpn_bounce_out{0%{opacity:1;top:0}100%{opacity:.5;top:100%}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_from_left{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}50%{transform:scale(1.03, 1.03);transform-origin:bottom left}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_from_left{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}}@keyframes slideInFromBottom{0%{opacity:.1;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}@keyframes slideInFromBottomDelay{0%{opacity:0;transform:translateY(100%)}97%{opacity:0;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}</style><link rel="stylesheet" type="text/css" href="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/twitcount.css" media="all"></head>
+<body id="mh-mobile" class="bp-legacy page-template-default page page-id-12098 admin-bar no-customize-support mh-boxed-layout mh-right-sb mh-loop-layout2 mh-widget-layout1 js" itemscope="itemscope" itemtype="http://schema.org/WebPage" aria-hidden="false">
+<div class="mh-container mh-container-outer">
+<div class="mh-header-nav-mobile clearfix"></div>
+	<div class="mh-preheader">
+    	<div class="mh-container mh-container-inner mh-row clearfix">
+							<div class="mh-header-bar-content mh-header-bar-top-left mh-col-2-3 clearfix">
+									</div>
+										<div class="mh-header-bar-content mh-header-bar-top-right mh-col-1-3 clearfix">
+											<nav class="mh-social-icons mh-social-nav mh-social-nav-top clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+							<div class="menu-social-icon-menus-container"><ul id="menu-social-icon-menus" class="menu"><li id="menu-item-1322" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1322"><a href="https://www.youtube.com/JetsonHacks"><i class="fa fa-mh-social"></i><span class="screen-reader-text">YouTube</span></a></li>
+<li id="menu-item-1321" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1321"><a href="https://twitter.com/Jetsonhacks/"><i class="fa fa-mh-social"></i><span class="screen-reader-text">Twitter</span></a></li>
+<li id="menu-item-2372" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2372"><a href="https://github.com/jetsonhacks"><i class="fa fa-mh-social"></i><span class="screen-reader-text">JetsonHacks on Github</span></a></li>
+<li id="menu-item-1830" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1830"><a href="https://www.facebook.com/JetsonHacks-940232329347725/"><i class="fa fa-mh-social"></i><span class="screen-reader-text">Facebook</span></a></li>
+</ul></div>						</nav>
+									</div>
+					</div>
+	</div>
+<header class="mh-header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+	<div class="mh-container mh-container-inner clearfix">
+		<div class="mh-custom-header clearfix">
+<a class="mh-header-image-link" href="https://www.jetsonhacks.com/" title="JetsonHacks" rel="home">
+<img class="mh-header-image" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/JHWebsiteHeader7.jpg" height="190" width="1080" alt="JetsonHacks">
+</a>
+</div>
+	</div>
+	<div class="mh-main-nav-wrap"><div class="slicknav_menu"><a href="https://www.jetsonhacks.com/nvidia-jetson-xavier-nx-gpio-header-pinout/#" aria-haspopup="true" tabindex="0" class="slicknav_btn slicknav_collapsed" style="outline: none;"><span class="slicknav_menutxt">MENU</span><span class="slicknav_icon"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a><nav class="slicknav_nav slicknav_hidden" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement" aria-hidden="true" role="menu" style="display: none;">
+			<div class="menu-mainmenubar-container"><ul class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1328"><a href="https://www.jetsonhacks.com/" role="menuitem">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1352 slicknav_collapsed slicknav_parent"><a href="https://www.jetsonhacks.com/nvidia-jetson-xavier-nx-gpio-header-pinout/#" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row" style="outline: none;"><a title="Main post categories" href="https://www.jetsonhacks.com/categories/">Categories</a>
+<span class="slicknav_arrow">►</span></a><ul class="sub-menu slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1353"><a href="https://www.jetsonhacks.com/category/deep-learning/" role="menuitem" tabindex="-1">Deep Learning</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1354"><a href="https://www.jetsonhacks.com/category/hardware/" role="menuitem" tabindex="-1">Hardware</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1355"><a href="https://www.jetsonhacks.com/category/operating-system/" role="menuitem" tabindex="-1">Operating System</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1356"><a href="https://www.jetsonhacks.com/category/robotics/" role="menuitem" tabindex="-1">Robotics</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1357"><a href="https://www.jetsonhacks.com/category/software/" role="menuitem" tabindex="-1">Software</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1343"><a href="https://www.jetsonhacks.com/articles/" role="menuitem">Articles</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3740 slicknav_collapsed slicknav_parent"><a href="https://www.jetsonhacks.com/nvidia-jetson-xavier-nx-gpio-header-pinout/#" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row" style="outline: none;"><a href="https://www.jetsonhacks.com/racecar-j/">RACECAR/J</a>
+<span class="slicknav_arrow">►</span></a><ul class="sub-menu slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3871"><a href="https://racecarj.com/" role="menuitem" tabindex="-1">RACECAR/J Store</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3872"><a href="https://www.jetsonhacks.com/racecar-j/" role="menuitem" tabindex="-1">RACECAR/J Articles</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1349 slicknav_collapsed slicknav_parent"><a href="https://www.jetsonhacks.com/nvidia-jetson-xavier-nx-gpio-header-pinout/#" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row" style="outline: none;"><a href="https://www.jetsonhacks.com/resources/">Resources</a>
+<span class="slicknav_arrow">►</span></a><ul class="sub-menu slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11701"><a href="https://www.amazon.com/shop/jetsonhacks" role="menuitem" tabindex="-1">JetsonHacks on Amazon</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3866"><a href="https://github.com/JetsonHacks" role="menuitem" tabindex="-1">JetsonHacks on Github</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3867"><a href="https://www.youtube.com/channel/UCQs0lwV6E4p7LQaGJ6fgy5Q" role="menuitem" tabindex="-1">JetsonHacks on YouTube</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3868"><a href="https://www.jetsonhacks.com/resources/" role="menuitem" tabindex="-1">Additional Resources (Jetson Forums, Wikis, Pinouts)</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3869"><a href="https://twitter.com/Jetsonhacks" role="menuitem" tabindex="-1">JetsonHacks on Twitter</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-3973 slicknav_collapsed slicknav_parent"><a href="https://www.jetsonhacks.com/nvidia-jetson-xavier-nx-gpio-header-pinout/#" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row" style="outline: none;"><a href="https://www.jetsonhacks.com/pinouts/">Pinouts</a>
+<span class="slicknav_arrow">►</span></a><ul class="sub-menu slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4425"><a href="https://www.jetsonhacks.com/nvidia-jetson-nano-j41-header-pinout/" role="menuitem" tabindex="-1">NVIDIA Jetson Nano J41 Header Pinout</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12225"><a href="https://www.jetsonhacks.com/nvidia-jetson-nano-2gb-j6-gpio-header-pinout/" role="menuitem" tabindex="-1">NVIDIA Jetson Nano 2GB J6 GPIO Header Pinout</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-12098 current_page_item menu-item-12117"><a href="https://www.jetsonhacks.com/nvidia-jetson-xavier-nx-gpio-header-pinout/" aria-current="page" role="menuitem" tabindex="-1">NVIDIA Jetson Xavier NX GPIO J21 Header Pinout</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4107"><a href="https://www.jetsonhacks.com/nvidia-jetson-agx-xavier-gpio-header-pinout/" role="menuitem" tabindex="-1">NVIDIA Jetson AGX Xavier Expansion Header Pinout</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3974"><a href="https://www.jetsonhacks.com/nvidia-jetson-tx2-j21-header-pinout/" role="menuitem" tabindex="-1">NVIDIA Jetson TX2 J21 Header Pinout</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3975"><a href="https://www.jetsonhacks.com/nvidia-jetson-tx1-j21-header-pinout/" role="menuitem" tabindex="-1">NVIDIA Jetson TX1 J21 Header Pinout</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11788"><a href="https://www.jetsonhacks.com/donation/" role="menuitem">Donation</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1416"><a href="https://www.jetsonhacks.com/about-us/" role="menuitem">About / Contact</a></li>
+</ul></div>		</nav></div>
+		<nav class="mh-navigation mh-main-nav mh-container mh-container-inner clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+			<div class="menu-mainmenubar-container"><ul id="menu-mainmenubar" class="menu"><li id="menu-item-1328" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1328"><a href="https://www.jetsonhacks.com/">Home</a></li>
+<li id="menu-item-1352" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1352"><a title="Main post categories" href="https://www.jetsonhacks.com/categories/">Categories</a>
+<ul class="sub-menu">
+	<li id="menu-item-1353" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1353"><a href="https://www.jetsonhacks.com/category/deep-learning/">Deep Learning</a></li>
+	<li id="menu-item-1354" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1354"><a href="https://www.jetsonhacks.com/category/hardware/">Hardware</a></li>
+	<li id="menu-item-1355" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1355"><a href="https://www.jetsonhacks.com/category/operating-system/">Operating System</a></li>
+	<li id="menu-item-1356" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1356"><a href="https://www.jetsonhacks.com/category/robotics/">Robotics</a></li>
+	<li id="menu-item-1357" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1357"><a href="https://www.jetsonhacks.com/category/software/">Software</a></li>
+</ul>
+</li>
+<li id="menu-item-1343" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1343"><a href="https://www.jetsonhacks.com/articles/">Articles</a></li>
+<li id="menu-item-3740" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3740"><a href="https://www.jetsonhacks.com/racecar-j/">RACECAR/J</a>
+<ul class="sub-menu">
+	<li id="menu-item-3871" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3871"><a href="https://racecarj.com/">RACECAR/J Store</a></li>
+	<li id="menu-item-3872" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3872"><a href="https://www.jetsonhacks.com/racecar-j/">RACECAR/J Articles</a></li>
+</ul>
+</li>
+<li id="menu-item-1349" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1349"><a href="https://www.jetsonhacks.com/resources/">Resources</a>
+<ul class="sub-menu">
+	<li id="menu-item-11701" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11701"><a href="https://www.amazon.com/shop/jetsonhacks">JetsonHacks on Amazon</a></li>
+	<li id="menu-item-3866" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3866"><a href="https://github.com/JetsonHacks">JetsonHacks on Github</a></li>
+	<li id="menu-item-3867" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3867"><a href="https://www.youtube.com/channel/UCQs0lwV6E4p7LQaGJ6fgy5Q">JetsonHacks on YouTube</a></li>
+	<li id="menu-item-3868" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3868"><a href="https://www.jetsonhacks.com/resources/">Additional Resources (Jetson Forums, Wikis, Pinouts)</a></li>
+	<li id="menu-item-3869" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3869"><a href="https://twitter.com/Jetsonhacks">JetsonHacks on Twitter</a></li>
+</ul>
+</li>
+<li id="menu-item-3973" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-3973"><a href="https://www.jetsonhacks.com/pinouts/">Pinouts</a>
+<ul class="sub-menu">
+	<li id="menu-item-4425" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4425"><a href="https://www.jetsonhacks.com/nvidia-jetson-nano-j41-header-pinout/">NVIDIA Jetson Nano J41 Header Pinout</a></li>
+	<li id="menu-item-12225" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12225"><a href="https://www.jetsonhacks.com/nvidia-jetson-nano-2gb-j6-gpio-header-pinout/">NVIDIA Jetson Nano 2GB J6 GPIO Header Pinout</a></li>
+	<li id="menu-item-12117" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-12098 current_page_item menu-item-12117"><a href="https://www.jetsonhacks.com/nvidia-jetson-xavier-nx-gpio-header-pinout/" aria-current="page">NVIDIA Jetson Xavier NX GPIO J21 Header Pinout</a></li>
+	<li id="menu-item-4107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4107"><a href="https://www.jetsonhacks.com/nvidia-jetson-agx-xavier-gpio-header-pinout/">NVIDIA Jetson AGX Xavier Expansion Header Pinout</a></li>
+	<li id="menu-item-3974" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3974"><a href="https://www.jetsonhacks.com/nvidia-jetson-tx2-j21-header-pinout/">NVIDIA Jetson TX2 J21 Header Pinout</a></li>
+	<li id="menu-item-3975" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3975"><a href="https://www.jetsonhacks.com/nvidia-jetson-tx1-j21-header-pinout/">NVIDIA Jetson TX1 J21 Header Pinout</a></li>
+</ul>
+</li>
+<li id="menu-item-11788" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11788"><a href="https://www.jetsonhacks.com/donation/">Donation</a></li>
+<li id="menu-item-1416" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1416"><a href="https://www.jetsonhacks.com/about-us/">About / Contact</a></li>
+</ul></div>		</nav>
+	</div>
+	</header>
+	<div class="mh-subheader">
+		<div class="mh-container mh-container-inner mh-row clearfix">
+							<div class="mh-header-bar-content mh-header-bar-bottom-left mh-col-2-3 clearfix">
+									</div>
+										<div class="mh-header-bar-content mh-header-bar-bottom-right mh-col-1-3 clearfix">
+											<aside class="mh-header-search mh-header-search-bottom">
+							<form role="search" method="get" class="search-form" action="https://www.jetsonhacks.com/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search …" value="" name="s">
+				</label>
+				<input type="submit" class="search-submit" value="Search">
+			</form>						</aside>
+									</div>
+					</div>
+	</div>
+<div class="mh-wrapper clearfix">
+	<div class="mh-main clearfix">
+    	<div id="main-content" class="mh-content" role="main" itemprop="mainContentOfPage"><nav class="mh-breadcrumb"><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://www.jetsonhacks.com/" itemprop="url"><span itemprop="title">Home</span></a></span><span class="mh-breadcrumb-delimiter"><i class="fa fa-angle-right"></i></span>NVIDIA Jetson Xavier NX GPIO Header Pinout</nav>
+<article id="page-12098" class="post-12098 page type-page status-publish has-post-thumbnail">
+	<header class="page-header">
+		<h1 class="entry-title page-title">NVIDIA Jetson Xavier NX GPIO Header Pinout</h1>	</header>
+		<div class="entry-content clearfix">
+		
+<p>Jetson Xavier NX GPIO Header J12 PINOUT</p>
+
+
+
+<p>By default, I2C and UART pins are assigned. All other pins (except power and ground) are assigned as GPIO. Pins labeled with other functions below are suggested functions.</p>
+
+
+
+<table class="t1"><thead><tr><th>Sysfs GPIO</th><th>Name</th><th>Pin</th><th>Pin</th><th>Name</th><th>Sysfs GPIO</th></tr></thead><thead><tr><th colspan="6">Jetson Xavier NX J12 Header</th></tr></thead><colgroup><col class="c1"> <col class="c2"> <col class="c3"></colgroup><tbody><tr><td>&nbsp;</td><td class="rightAlign pow33vBackground"><strong>3.3 VDC</strong><br><em>Power</em></td><td class="grayBackground"><div class="gpio pow33v pin1">1</div></td><td class="grayBackground"><div class="gpio pow5v">2</div></td><td class="pow5vBackground"><strong>5.0 VDC</strong><br><em>Power</em></td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td class="rightAlign i2cBackground"><strong>I2C1_SDA</strong><br><em>I2C Bus 8</em></td><td class="grayBackground"><div class="gpio i2c">3</div></td><td class="grayBackground"><div class="gpio pow5v">4</div></td><td class="pow5vBackground"><strong>5.0 VDC</strong><br><em>Power</em></td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td class="rightAlign i2cBackground"><strong>I2C1_SCL</strong><br><em>I2C Bus 8</em></td><td class="grayBackground"><div class="gpio i2c">5</div></td><td class="grayBackground"><div class="ground">6</div></td><td class="groundBackground"><strong>GND</strong></td><td>&nbsp;</td></tr><tr><td>&nbsp;<em>148</em><br>&nbsp;gpio436</td><td class="rightAlign gpioBackground"><strong>GPIO9</strong><br><em>AUDIO_MCLK&nbsp;</em><br></td><td class="grayBackground"><div class="gpio">7</div></td><td class="grayBackground"><div class="gpio uart">8</div></td><td class="uartBackground"><strong>UART1_TX</strong><br><em>/dev/ttyTHS0</em></td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td class="rightAlign groundBackground"><strong>GND</strong></td><td class="grayBackground"><div class="ground">9</div></td><td class="grayBackground"><div class="gpio uart">10</div></td><td class="uartBackground"><strong>UART1_RX</strong><br><em>/dev/ttyTHS0</em></td><td>&nbsp;</td></tr><tr><td>&nbsp;<em>140</em><br>&nbsp;gpio428</td><td class="rightAlign uartBackground"><strong>UART1_RTS</strong></td><td class="grayBackground"><div class="gpio uart">11</div></td><td class="grayBackground"><div class="gpio i2s">12</div></td><td class="i2sBackground"><strong>I2S0_SCLK</strong></td><td>&nbsp;<em>157</em><br>gpio445</td></tr><tr><td>&nbsp;<em>192</em><br>&nbsp;gpio480</td><td class="rightAlign spiBackground"><strong>&nbsp;SPI1_SCK</strong></td><td class="grayBackground"><div class="gpio spi">13</div></td><td class="grayBackground"><div class="ground">14</div></td><td class="groundBackground"><strong>GND</strong></td><td>&nbsp;</td></tr><tr><td>&nbsp;<em>20</em><br>gpio268</td><td class="rightAlign gpioBackground"><strong>GPIO12</strong><br><em>Alt: PWM</em><br></td><td class="grayBackground"><div class="gpio">15</div></td><td class="grayBackground"><div class="gpio spi">16</div></td><td class="spiBackground"><strong>&nbsp;SPI1_CS1</strong></td><td>&nbsp;<em>196</em><br>gpio484</td></tr><tr><td>&nbsp;</td><td class="rightAlign pow33vBackground"><strong>3.3 VDC</strong><br><em>Power</em></td><td class="grayBackground"><div class="gpio pow33v">17</div></td><td class="grayBackground"><div class="gpio spi">18</div></td><td class="spiBackground"><strong>&nbsp;SPI1_CS0&nbsp;</strong></td><td>&nbsp;<em>195</em><br>&nbsp;gpio483</td></tr><tr><td>&nbsp;<em>205</em><br>&nbsp;gpio493</td><td class="rightAlign spiBackground"><strong>SPI0_MOSI</strong></td><td class="grayBackground"><div class="gpio spi">19</div></td><td class="grayBackground"><div class="ground">20</div></td><td class="groundBackground"><strong>GND</strong></td><td>&nbsp;</td></tr><tr><td>&nbsp;<em>204</em><br>&nbsp;gpio492</td><td class="rightAlign spiBackground"><strong>SPI0_MISO</strong></td><td class="grayBackground"><div class="gpio spi">21</div></td><td class="grayBackground"><div class="gpio spi">22</div></td><td class="spiBackground"><strong>&nbsp;SPI1_MISO&nbsp;</strong></td><td>&nbsp;<em>193</em><br>&nbsp;gpio481</td></tr><tr><td>&nbsp;<em>203</em><br>&nbsp;gpio491</td><td class="rightAlign spiBackground"><strong>&nbsp;SPI0_SCK&nbsp;</strong></td><td class="grayBackground"><div class="gpio spi">23</div></td><td class="grayBackground"><div class="gpio spi">24</div></td><td class="spiBackground"><strong>&nbsp;SPI0_CS0&nbsp;</strong></td><td>&nbsp;<em>206</em><br>&nbsp;gpio494</td></tr><tr><td>&nbsp;</td><td class="rightAlign groundBackground"><strong>GND</strong></td><td class="grayBackground"><div class="ground">25</div></td><td class="grayBackground"><div class="gpio spi">26</div></td><td class="spiBackground"><strong>&nbsp;SPI0_CS1&nbsp;</strong></td><td>&nbsp;<em>207</em><br>&nbsp;gpio495</td></tr><tr><td>&nbsp;</td><td class="rightAlign i2cBackground"><strong>I2C0_SDA</strong><br><em>I2C Bus 1</em></td><td class="grayBackground"><div class="gpio i2c">27</div></td><td class="grayBackground"><div class="gpio i2c">28</div></td><td class="i2cBackground"><strong>I2C0_SCL</strong><br><em>I2C Bus 1</em></td><td>&nbsp;</td></tr><tr><td>&nbsp;<em>133</em><br>&nbsp;gpio421</td><td class="rightAlign gpioBackground"><strong>GPIO01</strong></td><td class="grayBackground"><div class="gpio">29</div></td><td class="grayBackground"><div class="ground">30</div></td><td class="groundBackground"><strong>GND</strong></td><td>&nbsp;</td></tr><tr><td>&nbsp;<em>134</em><br>&nbsp;gpio422</td><td class="rightAlign gpioBackground"><strong>&nbsp;<strong>GPIO11</strong><br><br></strong></td><td class="grayBackground"><div class="gpio">31</div></td><td class="grayBackground"><div class="gpio unused">32</div></td><td class="gpioBackground">&nbsp;<strong>GPIO07</strong><br><em>Alt: PWM</em>&nbsp;</td><td>&nbsp;<em>136</em><br>&nbsp;gpio424</td></tr><tr><td>&nbsp;<em>105</em><br>&nbsp;gpio393</td><td class="rightAlign gpioBackground">&nbsp;<strong>GPIO13</strong><br><em>Alt: PWM</em>&nbsp;</td><td class="grayBackground"><div class="gpio">33</div></td><td class="grayBackground"><div class="ground">34</div></td><td class="groundBackground"><strong>GND</strong></td><td>&nbsp;</td></tr><tr><td>&nbsp;<em>160</em><br>&nbsp;gpio448</td><td class="rightAlign i2sBackground"><strong>&nbsp;I2S0_FS&nbsp;</strong></td><td class="grayBackground"><div class="gpio i2s">35</div></td><td class="grayBackground"><div class="gpio uart">36</div></td><td class="uartBackground"><strong>&nbsp;UART1_CTS&nbsp;</strong></td><td>&nbsp;<em>141</em><br>&nbsp;gpio429</td></tr><tr><td>&nbsp;<em>194</em><br>&nbsp;gpio482</td><td class="rightAlign spiBackground"><strong>&nbsp;SPI1_MOSI</strong></td><td class="grayBackground"><div class="gpio spi">37</div></td><td class="grayBackground"><div class="gpio i2s">38</div></td><td class="i2sBackground"><strong>I2S0_SDIN</strong></td><td>&nbsp;<em>159</em><br>&nbsp;gpio447</td></tr><tr><td>&nbsp;</td><td class="rightAlign groundBackground"><strong>GND</strong></td><td class="grayBackground"><div class="ground">39</div></td><td class="grayBackground"><div class="gpio i2s">40</div></td><td class="i2sBackground"><strong>&nbsp;I2S0_SDOUT&nbsp;</strong></td><td>&nbsp;<em>158</em><br>&nbsp;gpio446</td></tr></tbody></table>
+
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="12107" data-permalink="https://www.jetsonhacks.com/nvidia-jetson-xavier-nx-gpio-header-pinout/pin1xnx/" data-orig-file="https://i2.wp.com/www.jetsonhacks.com/wp-content/uploads/2020/06/Pin1XNX-scaled.jpg?fit=2560%2C1707&amp;ssl=1" data-orig-size="2560,1707" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;14&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;Canon EOS Rebel T7i&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1589056243&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;240&quot;,&quot;iso&quot;:&quot;400&quot;,&quot;shutter_speed&quot;:&quot;1.3&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Pin1XNX" data-image-description="&lt;p&gt;Pin 1 – Jetson Xavier NX&lt;/p&gt;
+" data-image-caption="&lt;p&gt;Pin 1 – Jetson Xavier NX&lt;/p&gt;
+" data-medium-file="https://i2.wp.com/www.jetsonhacks.com/wp-content/uploads/2020/06/Pin1XNX-scaled.jpg?fit=300%2C200&amp;ssl=1" data-large-file="https://i2.wp.com/www.jetsonhacks.com/wp-content/uploads/2020/06/Pin1XNX-scaled.jpg?fit=2560%2C1707&amp;ssl=1" loading="eager" width="2560" height="1707" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/Pin1XNX-scaled.jpg" alt="" class="wp-image-12107 jetpack-lazy-image jetpack-lazy-image--handled" data-recalc-dims="1" srcset="https://i2.wp.com/www.jetsonhacks.com/wp-content/uploads/2020/06/Pin1XNX-scaled.jpg?w=2560&amp;ssl=1 2560w, https://i2.wp.com/www.jetsonhacks.com/wp-content/uploads/2020/06/Pin1XNX-scaled.jpg?resize=300%2C200&amp;ssl=1 300w, https://i2.wp.com/www.jetsonhacks.com/wp-content/uploads/2020/06/Pin1XNX-scaled.jpg?resize=768%2C512&amp;ssl=1 768w, https://i2.wp.com/www.jetsonhacks.com/wp-content/uploads/2020/06/Pin1XNX-scaled.jpg?resize=1536%2C1024&amp;ssl=1 1536w, https://i2.wp.com/www.jetsonhacks.com/wp-content/uploads/2020/06/Pin1XNX-scaled.jpg?resize=2048%2C1365&amp;ssl=1 2048w" data-lazy-loaded="1" sizes="(max-width: 1000px) 100vw, 1000px"><noscript><img data-attachment-id="12107" data-permalink="https://www.jetsonhacks.com/nvidia-jetson-xavier-nx-gpio-header-pinout/pin1xnx/" data-orig-file="https://i2.wp.com/www.jetsonhacks.com/wp-content/uploads/2020/06/Pin1XNX-scaled.jpg?fit=2560%2C1707&amp;ssl=1" data-orig-size="2560,1707" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;14&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;Canon EOS Rebel T7i&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1589056243&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;240&quot;,&quot;iso&quot;:&quot;400&quot;,&quot;shutter_speed&quot;:&quot;1.3&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Pin1XNX" data-image-description="&lt;p&gt;Pin 1 &#8211; Jetson Xavier NX&lt;/p&gt;
+" data-image-caption="&lt;p&gt;Pin 1 &#8211; Jetson Xavier NX&lt;/p&gt;
+" data-medium-file="https://i2.wp.com/www.jetsonhacks.com/wp-content/uploads/2020/06/Pin1XNX-scaled.jpg?fit=300%2C200&amp;ssl=1" data-large-file="https://i2.wp.com/www.jetsonhacks.com/wp-content/uploads/2020/06/Pin1XNX-scaled.jpg?fit=2560%2C1707&amp;ssl=1" loading="lazy" width="2560" height="1707" src="https://i2.wp.com/www.jetsonhacks.com/wp-content/uploads/2020/06/Pin1XNX-scaled.jpg?resize=2560%2C1707&#038;ssl=1" alt="" class="wp-image-12107" srcset="https://i2.wp.com/www.jetsonhacks.com/wp-content/uploads/2020/06/Pin1XNX-scaled.jpg?w=2560&amp;ssl=1 2560w, https://i2.wp.com/www.jetsonhacks.com/wp-content/uploads/2020/06/Pin1XNX-scaled.jpg?resize=300%2C200&amp;ssl=1 300w, https://i2.wp.com/www.jetsonhacks.com/wp-content/uploads/2020/06/Pin1XNX-scaled.jpg?resize=768%2C512&amp;ssl=1 768w, https://i2.wp.com/www.jetsonhacks.com/wp-content/uploads/2020/06/Pin1XNX-scaled.jpg?resize=1536%2C1024&amp;ssl=1 1536w, https://i2.wp.com/www.jetsonhacks.com/wp-content/uploads/2020/06/Pin1XNX-scaled.jpg?resize=2048%2C1365&amp;ssl=1 2048w" sizes="(max-width: 1000px) 100vw, 1000px" data-recalc-dims="1" /></noscript><figcaption>Jetson Xavier NX – Pin 1 is on the outside edge</figcaption></figure>
+
+
+
+<h4>Notes</h4>
+
+
+
+<p><em>Last update 7-25-20 </em></p>
+
+
+
+<ul><li>7-25-2020</li><li>Added the gpiochip-specific offset to sysfs gpio number</li><li>First number is the GPIO number&nbsp;<em>within</em>&nbsp;a GPIO controller</li><li>Second ( <em>gpioXXXX</em> ) is the global Linux GPIO number</li></ul>
+
+
+
+<ul><li>6-16-2020 – Preliminary. </li><li>Pin 32 – When configured as PWM:<ul><li>PWM chip sysfs directory: /sys/devices/32f0000.pwm</li><li>PWM ID within PWM chip: 0</li></ul></li><li>Pin 33 – When configured as PWM:<ul><li>PWM chip sysfs directory: /sys/devices/3280000.pwm</li><li>PWM ID within PWM chip: 0</li></ul></li></ul>
+	</div>
+	</article>        </div>
+			<aside class="mh-widget-col-1 mh-sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar"><div id="text-4" class="mh-widget widget_text">			<div class="textwidget"><script async="" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/f(10).txt"></script>
+<!-- jetsonhacks -->
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-8407797500832485" data-ad-slot="9043436652" data-adsbygoogle-status="done" data-ad-status="filled"><ins id="aswift_0_expand" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 250px; width: 300px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-table;"><ins id="aswift_0_anchor" style="border: none; height: 250px; width: 300px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: block;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:300px;height:250px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="300" height="250" frameborder="0" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/ads.html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" allow="attribution-reporting" data-google-container-id="a!1" data-google-query-id="CN3Zm5rs4PQCFQfKvAodR_4BWg" data-load-complete="true"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+		</div><div id="text-8" class="mh-widget widget_text"><h4 class="mh-widget-title"><span class="mh-widget-title-inner">Disclaimer</span></h4>			<div class="textwidget"><p>Some links here have an affiliate code. If you purchase through these links I will receive a small commission at no additional cost to you. Thank you!</p>
+<p>&nbsp;</p>
+<p><strong><u><a href="https://www.amazon.com/shop/jetsonhacks" target="_blank" rel="noopener">Here’s the JetsonHacks Amazon Store</a></u></strong></p>
+</div>
+		</div><div id="custom_html-7" class="widget_text mh-widget widget_custom_html"><div class="textwidget custom-html-widget"><strong><u><a href="https://click.linksynergy.com/fs-bin/click?id=Y34Ss0fgjnU&amp;offerid=676338.15&amp;type=3&amp;subid=0">NVIDIA Jetson Store</a><img border="0" width="1" alt="" height="1" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/show" class="jetpack-lazy-image jetpack-lazy-image--handled" data-lazy-loaded="1" loading="eager"><noscript><img border="0" width="1" alt="" height="1" src="https://ad.linksynergy.com/fs-bin/show?id=Y34Ss0fgjnU&bids=676338.15&type=3&subid=0" ></noscript></u></strong></div></div><div id="text-17" class="mh-widget widget_text">			<div class="textwidget"><p>As an Amazon Associate I earn from qualifying purchases.</p>
+</div>
+		</div><div id="text-16" class="mh-widget widget_text"><h4 class="mh-widget-title"><span class="mh-widget-title-inner">Donate</span></h4>			<div class="textwidget"><p><u><a href="https://www.jetsonhacks.com/donation/" target="_blank" rel="noopener">Donate for mo’ better content</a><br>
+</u></p>
+<!-- Begin PayPal Donations by https://www.tipsandtricks-hq.com/paypal-donations-widgets-plugin -->
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+    <div class="paypal-donations">
+        <input type="hidden" name="cmd" value="_donations">
+        <input type="hidden" name="bn" value="TipsandTricks_SP">
+        <input type="hidden" name="business" value="jim@kangalow.com">
+        <input type="hidden" name="return" value="https://wp.me/P7ZgI9-341">
+        <input type="hidden" name="item_name" value="Make Jim work harder">
+        <input type="hidden" name="item_number" value="Oh, and make the JetsonHacks videos and articles better!">
+        <input type="hidden" name="rm" value="0">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="image" style="cursor: pointer;" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/btn_donateCC_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online.">
+        <img alt="" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/pixel.gif" width="1" height="1">
+    </div>
+</form>
+<!-- End PayPal Donations -->
+
+<p>&nbsp;</p>
+</div>
+		</div><div id="custom_html-11" class="widget_text mh-widget widget_custom_html"><h4 class="mh-widget-title"><span class="mh-widget-title-inner">JetsonHacks on YouTube</span></h4><div class="textwidget custom-html-widget"><script src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/platform.js" gapi_processed="true"></script>
+
+<div id="___ytsubscribe_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 174px; height: 48px;"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 174px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 48px;" tabindex="0" vspace="0" width="100%" id="I0_1639400883265" name="I0_1639400883265" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/subscribe_embed.html" data-gapiattached="true"></iframe></div></div></div>
+		<div id="recent-posts-4" class="mh-widget widget_recent_entries">
+		<h4 class="mh-widget-title"><span class="mh-widget-title-inner">Recent Articles</span></h4>
+		<ul>
+											<li>
+					<a href="https://www.jetsonhacks.com/2021/12/09/python-code-cleaning-gui-gstreamer-inspector/">Python Code Cleaning – GUI GStreamer Inspector</a>
+											<span class="post-date">December 9, 2021</span>
+									</li>
+											<li>
+					<a href="https://www.jetsonhacks.com/2021/11/20/nvidia-jetson-agx-orin/">NVIDIA Jetson AGX Orin</a>
+											<span class="post-date">November 20, 2021</span>
+									</li>
+											<li>
+					<a href="https://www.jetsonhacks.com/2021/11/08/gstreamer-inspector-gui/">GStreamer Inspector GUI</a>
+											<span class="post-date">November 8, 2021</span>
+									</li>
+											<li>
+					<a href="https://www.jetsonhacks.com/2021/10/05/wi-fi-hotspot-setup-nvidia-jetson-developer-kits/">Wi-Fi Hotspot Setup – NVIDIA Jetson Developer Kits</a>
+											<span class="post-date">October 5, 2021</span>
+									</li>
+											<li>
+					<a href="https://www.jetsonhacks.com/2021/09/20/more-fall-cleaning-2021/">More Fall Cleaning, 2021</a>
+											<span class="post-date">September 20, 2021</span>
+									</li>
+											<li>
+					<a href="https://www.jetsonhacks.com/2021/09/08/fall-cleaning-repositories-2021/">Fall Cleaning Repositories, 2021</a>
+											<span class="post-date">September 8, 2021</span>
+									</li>
+					</ul>
+
+		</div><div id="categories-4" class="mh-widget widget_categories"><h4 class="mh-widget-title"><span class="mh-widget-title-inner">Categories</span></h4><form action="https://www.jetsonhacks.com/" method="get"><label class="screen-reader-text" for="cat">Categories</label><select name="cat" id="cat" class="postform">
+	<option value="-1">Select Category</option>
+	<option class="level-0" value="214">Battery&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="200">Camera&nbsp;&nbsp;(4)</option>
+	<option class="level-0" value="13">CUDA&nbsp;&nbsp;(10)</option>
+	<option class="level-0" value="21">Deep Learning&nbsp;&nbsp;(24)</option>
+	<option class="level-1" value="18">&nbsp;&nbsp;&nbsp;Caffe&nbsp;&nbsp;(7)</option>
+	<option class="level-1" value="131">&nbsp;&nbsp;&nbsp;TensorFlow&nbsp;&nbsp;(9)</option>
+	<option class="level-1" value="23">&nbsp;&nbsp;&nbsp;Torch&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="139">Featured&nbsp;&nbsp;(8)</option>
+	<option class="level-0" value="25">Grinch&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="12">Gstreamer&nbsp;&nbsp;(6)</option>
+	<option class="level-0" value="141">GTC&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="19">GTC 2015&nbsp;&nbsp;(10)</option>
+	<option class="level-0" value="122">GTC 2016&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="45">Hardware&nbsp;&nbsp;(53)</option>
+	<option class="level-1" value="42">&nbsp;&nbsp;&nbsp;GPIO/I2C&nbsp;&nbsp;(34)</option>
+	<option class="level-1" value="201">&nbsp;&nbsp;&nbsp;Wireless&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="10">Information&nbsp;&nbsp;(111)</option>
+	<option class="level-0" value="198">Jetson Nano&nbsp;&nbsp;(26)</option>
+	<option class="level-0" value="212">Jetson Nano 2GB&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="215">Jetson Orin&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="175">Jetson TX1&nbsp;&nbsp;(11)</option>
+	<option class="level-0" value="135">Jetson TX2&nbsp;&nbsp;(18)</option>
+	<option class="level-0" value="195">Jetson Xavier&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="209">Jetson Xavier NX&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="43">News&nbsp;&nbsp;(19)</option>
+	<option class="level-0" value="11">OpenCV&nbsp;&nbsp;(14)</option>
+	<option class="level-0" value="47">Operating System&nbsp;&nbsp;(37)</option>
+	<option class="level-1" value="16">&nbsp;&nbsp;&nbsp;Android&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="125">Programming&nbsp;&nbsp;(10)</option>
+	<option class="level-0" value="20">Robotics&nbsp;&nbsp;(94)</option>
+	<option class="level-1" value="121">&nbsp;&nbsp;&nbsp;Jetson Drone&nbsp;&nbsp;(8)</option>
+	<option class="level-1" value="91">&nbsp;&nbsp;&nbsp;Jetson RACECAR&nbsp;&nbsp;(19)</option>
+	<option class="level-1" value="124">&nbsp;&nbsp;&nbsp;Jetson Rover&nbsp;&nbsp;(1)</option>
+	<option class="level-1" value="37">&nbsp;&nbsp;&nbsp;JetsonBot&nbsp;&nbsp;(16)</option>
+	<option class="level-1" value="143">&nbsp;&nbsp;&nbsp;RACECAR/J&nbsp;&nbsp;(19)</option>
+	<option class="level-1" value="26">&nbsp;&nbsp;&nbsp;ROS&nbsp;&nbsp;(21)</option>
+	<option class="level-1" value="123">&nbsp;&nbsp;&nbsp;UPenn ARC&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="204">SDK Manager&nbsp;&nbsp;(4)</option>
+	<option class="level-0" value="46">Software&nbsp;&nbsp;(22)</option>
+	<option class="level-1" value="138">&nbsp;&nbsp;&nbsp;JetPack&nbsp;&nbsp;(13)</option>
+	<option class="level-1" value="22">&nbsp;&nbsp;&nbsp;Qt&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="203">Tutorial&nbsp;&nbsp;(10)</option>
+	<option class="level-0" value="9">Vision&nbsp;&nbsp;(35)</option>
+	<option class="level-0" value="194">Xavier&nbsp;&nbsp;(7)</option>
+</select>
+</form>
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "cat" );
+	function onCatChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value > 0 ) {
+			dropdown.parentNode.submit();
+		}
+	}
+	dropdown.onchange = onCatChange;
+})();
+/* ]]> */
+</script>
+
+			</div><div id="archives-4" class="mh-widget widget_archive"><h4 class="mh-widget-title"><span class="mh-widget-title-inner">Archives</span></h4>		<label class="screen-reader-text" for="archives-dropdown-4">Archives</label>
+		<select id="archives-dropdown-4" name="archive-dropdown">
+			
+			<option value="">Select Month</option>
+				<option value="https://www.jetsonhacks.com/2021/12/"> December 2021 </option>
+	<option value="https://www.jetsonhacks.com/2021/11/"> November 2021 </option>
+	<option value="https://www.jetsonhacks.com/2021/10/"> October 2021 </option>
+	<option value="https://www.jetsonhacks.com/2021/09/"> September 2021 </option>
+	<option value="https://www.jetsonhacks.com/2021/08/"> August 2021 </option>
+	<option value="https://www.jetsonhacks.com/2021/07/"> July 2021 </option>
+	<option value="https://www.jetsonhacks.com/2021/03/"> March 2021 </option>
+	<option value="https://www.jetsonhacks.com/2021/01/"> January 2021 </option>
+	<option value="https://www.jetsonhacks.com/2020/12/"> December 2020 </option>
+	<option value="https://www.jetsonhacks.com/2020/11/"> November 2020 </option>
+	<option value="https://www.jetsonhacks.com/2020/10/"> October 2020 </option>
+	<option value="https://www.jetsonhacks.com/2020/08/"> August 2020 </option>
+	<option value="https://www.jetsonhacks.com/2020/07/"> July 2020 </option>
+	<option value="https://www.jetsonhacks.com/2020/06/"> June 2020 </option>
+	<option value="https://www.jetsonhacks.com/2020/05/"> May 2020 </option>
+	<option value="https://www.jetsonhacks.com/2020/04/"> April 2020 </option>
+	<option value="https://www.jetsonhacks.com/2020/01/"> January 2020 </option>
+	<option value="https://www.jetsonhacks.com/2019/12/"> December 2019 </option>
+	<option value="https://www.jetsonhacks.com/2019/11/"> November 2019 </option>
+	<option value="https://www.jetsonhacks.com/2019/10/"> October 2019 </option>
+	<option value="https://www.jetsonhacks.com/2019/09/"> September 2019 </option>
+	<option value="https://www.jetsonhacks.com/2019/08/"> August 2019 </option>
+	<option value="https://www.jetsonhacks.com/2019/07/"> July 2019 </option>
+	<option value="https://www.jetsonhacks.com/2019/06/"> June 2019 </option>
+	<option value="https://www.jetsonhacks.com/2019/05/"> May 2019 </option>
+	<option value="https://www.jetsonhacks.com/2019/04/"> April 2019 </option>
+	<option value="https://www.jetsonhacks.com/2019/03/"> March 2019 </option>
+	<option value="https://www.jetsonhacks.com/2019/01/"> January 2019 </option>
+	<option value="https://www.jetsonhacks.com/2018/12/"> December 2018 </option>
+	<option value="https://www.jetsonhacks.com/2018/11/"> November 2018 </option>
+	<option value="https://www.jetsonhacks.com/2018/10/"> October 2018 </option>
+	<option value="https://www.jetsonhacks.com/2018/09/"> September 2018 </option>
+	<option value="https://www.jetsonhacks.com/2018/08/"> August 2018 </option>
+	<option value="https://www.jetsonhacks.com/2018/07/"> July 2018 </option>
+	<option value="https://www.jetsonhacks.com/2018/06/"> June 2018 </option>
+	<option value="https://www.jetsonhacks.com/2018/05/"> May 2018 </option>
+	<option value="https://www.jetsonhacks.com/2018/04/"> April 2018 </option>
+	<option value="https://www.jetsonhacks.com/2018/03/"> March 2018 </option>
+	<option value="https://www.jetsonhacks.com/2018/02/"> February 2018 </option>
+	<option value="https://www.jetsonhacks.com/2018/01/"> January 2018 </option>
+	<option value="https://www.jetsonhacks.com/2017/12/"> December 2017 </option>
+	<option value="https://www.jetsonhacks.com/2017/11/"> November 2017 </option>
+	<option value="https://www.jetsonhacks.com/2017/10/"> October 2017 </option>
+	<option value="https://www.jetsonhacks.com/2017/09/"> September 2017 </option>
+	<option value="https://www.jetsonhacks.com/2017/08/"> August 2017 </option>
+	<option value="https://www.jetsonhacks.com/2017/07/"> July 2017 </option>
+	<option value="https://www.jetsonhacks.com/2017/06/"> June 2017 </option>
+	<option value="https://www.jetsonhacks.com/2017/05/"> May 2017 </option>
+	<option value="https://www.jetsonhacks.com/2017/04/"> April 2017 </option>
+	<option value="https://www.jetsonhacks.com/2017/03/"> March 2017 </option>
+	<option value="https://www.jetsonhacks.com/2017/01/"> January 2017 </option>
+	<option value="https://www.jetsonhacks.com/2016/12/"> December 2016 </option>
+	<option value="https://www.jetsonhacks.com/2016/11/"> November 2016 </option>
+	<option value="https://www.jetsonhacks.com/2016/10/"> October 2016 </option>
+	<option value="https://www.jetsonhacks.com/2016/09/"> September 2016 </option>
+	<option value="https://www.jetsonhacks.com/2016/08/"> August 2016 </option>
+	<option value="https://www.jetsonhacks.com/2016/07/"> July 2016 </option>
+	<option value="https://www.jetsonhacks.com/2016/06/"> June 2016 </option>
+	<option value="https://www.jetsonhacks.com/2016/05/"> May 2016 </option>
+	<option value="https://www.jetsonhacks.com/2016/04/"> April 2016 </option>
+	<option value="https://www.jetsonhacks.com/2016/03/"> March 2016 </option>
+	<option value="https://www.jetsonhacks.com/2016/02/"> February 2016 </option>
+	<option value="https://www.jetsonhacks.com/2016/01/"> January 2016 </option>
+	<option value="https://www.jetsonhacks.com/2015/12/"> December 2015 </option>
+	<option value="https://www.jetsonhacks.com/2015/11/"> November 2015 </option>
+	<option value="https://www.jetsonhacks.com/2015/10/"> October 2015 </option>
+	<option value="https://www.jetsonhacks.com/2015/09/"> September 2015 </option>
+	<option value="https://www.jetsonhacks.com/2015/08/"> August 2015 </option>
+	<option value="https://www.jetsonhacks.com/2015/07/"> July 2015 </option>
+	<option value="https://www.jetsonhacks.com/2015/06/"> June 2015 </option>
+	<option value="https://www.jetsonhacks.com/2015/05/"> May 2015 </option>
+	<option value="https://www.jetsonhacks.com/2015/04/"> April 2015 </option>
+	<option value="https://www.jetsonhacks.com/2015/03/"> March 2015 </option>
+	<option value="https://www.jetsonhacks.com/2015/02/"> February 2015 </option>
+	<option value="https://www.jetsonhacks.com/2015/01/"> January 2015 </option>
+	<option value="https://www.jetsonhacks.com/2014/11/"> November 2014 </option>
+	<option value="https://www.jetsonhacks.com/2014/10/"> October 2014 </option>
+	<option value="https://www.jetsonhacks.com/2014/09/"> September 2014 </option>
+	<option value="https://www.jetsonhacks.com/2014/08/"> August 2014 </option>
+	<option value="https://www.jetsonhacks.com/2014/07/"> July 2014 </option>
+	<option value="https://www.jetsonhacks.com/2014/06/"> June 2014 </option>
+
+		</select>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "archives-dropdown-4" );
+	function onSelectChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value !== '' ) {
+			document.location.href = this.options[ this.selectedIndex ].value;
+		}
+	}
+	dropdown.onchange = onSelectChange;
+})();
+/* ]]> */
+</script>
+			</div><div id="meta-4" class="mh-widget widget_meta"><h4 class="mh-widget-title"><span class="mh-widget-title-inner">Meta</span></h4>
+		<ul>
+			<li><a href="https://www.jetsonhacks.com/register/">Register</a></li>			<li><a href="https://www.jetsonhacks.com/wp-login.php">Log in</a></li>
+			<li><a href="https://www.jetsonhacks.com/feed/">Entries feed</a></li>
+			<li><a href="https://www.jetsonhacks.com/comments/feed/">Comments feed</a></li>
+
+			<li><a href="https://wordpress.org/">WordPress.org</a></li>
+		</ul>
+
+		</div>	</aside>    </div>
+    </div>
+	<div class="mh-footer-nav-mobile"><div class="slicknav_menu"><a href="https://www.jetsonhacks.com/nvidia-jetson-xavier-nx-gpio-header-pinout/#" aria-haspopup="true" tabindex="0" class="slicknav_btn slicknav_collapsed" style="outline: none;"><span class="slicknav_menutxt">MENU</span><span class="slicknav_icon"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a><nav class="slicknav_nav slicknav_hidden" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement" aria-hidden="true" role="menu" style="display: none;">
+		<div class="mh-container mh-container-inner clearfix">
+			<div class="menu-footer-container"><ul class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2918"><a href="https://www.jetsonhacks.com/about-us/" role="menuitem">About</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2919"><a href="https://www.jetsonhacks.com/contact/" role="menuitem">Contact Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-3876"><a href="https://www.jetsonhacks.com/privacy-policy/" role="menuitem">Privacy Policy</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2917"><a href="https://www.jetsonhacks.com/sitemap/" role="menuitem">Sitemap</a></li>
+</ul></div>		</div>
+	</nav></div></div>
+	<nav class="mh-navigation mh-footer-nav" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+		<div class="mh-container mh-container-inner clearfix">
+			<div class="menu-footer-container"><ul id="menu-footer" class="menu"><li id="menu-item-2918" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2918"><a href="https://www.jetsonhacks.com/about-us/">About</a></li>
+<li id="menu-item-2919" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2919"><a href="https://www.jetsonhacks.com/contact/">Contact Us</a></li>
+<li id="menu-item-3876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-3876"><a href="https://www.jetsonhacks.com/privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-2917" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2917"><a href="https://www.jetsonhacks.com/sitemap/">Sitemap</a></li>
+</ul></div>		</div>
+	</nav>
+<div class="mh-copyright-wrap">
+	<div class="mh-container mh-container-inner clearfix">
+		<p class="mh-copyright">
+			Copyright @ JetsonHacks 2014-2021		</p>
+	</div>
+</div>
+<a href="https://www.jetsonhacks.com/nvidia-jetson-xavier-nx-gpio-header-pinout/#" class="mh-back-to-top" style="display: inline;"><i class="fa fa-chevron-up"></i></a>
+</div><!-- .mh-container-outer -->
+		<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+		<script>(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=1158761637505872';
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+				<div id="jp-carousel-loading-overlay">
+			<div id="jp-carousel-loading-wrapper">
+				<span id="jp-carousel-library-loading">&nbsp;</span>
+			</div>
+		</div>
+		<div class="jp-carousel-overlay" style="display: none;">
+
+		<div class="jp-carousel-container">
+			<!-- The Carousel Swiper -->
+			<div class="jp-carousel-wrap swiper-container jp-carousel-swiper-container jp-carousel-transitions" itemscope="" itemtype="https://schema.org/ImageGallery">
+				<div class="jp-carousel swiper-wrapper"></div>
+				<div class="jp-swiper-button-prev swiper-button-prev">
+					<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask id="maskPrev" mask-type="alpha" maskUnits="userSpaceOnUse" x="8" y="6" width="9" height="12">
+							<path d="M16.2072 16.59L11.6496 12L16.2072 7.41L14.8041 6L8.8335 12L14.8041 18L16.2072 16.59Z" fill="white"></path>
+						</mask>
+						<g mask="url(#maskPrev)">
+							<rect x="0.579102" width="23.8823" height="24" fill="#FFFFFF"></rect>
+						</g>
+					</svg>
+				</div>
+				<div class="jp-swiper-button-next swiper-button-next">
+					<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask id="maskNext" mask-type="alpha" maskUnits="userSpaceOnUse" x="8" y="6" width="8" height="12">
+							<path d="M8.59814 16.59L13.1557 12L8.59814 7.41L10.0012 6L15.9718 12L10.0012 18L8.59814 16.59Z" fill="white"></path>
+						</mask>
+						<g mask="url(#maskNext)">
+							<rect x="0.34375" width="23.8822" height="24" fill="#FFFFFF"></rect>
+						</g>
+					</svg>
+				</div>
+			</div>
+			<!-- The main close buton -->
+			<div class="jp-carousel-close-hint">
+				<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<mask id="maskClose" mask-type="alpha" maskUnits="userSpaceOnUse" x="5" y="5" width="15" height="14">
+						<path d="M19.3166 6.41L17.9135 5L12.3509 10.59L6.78834 5L5.38525 6.41L10.9478 12L5.38525 17.59L6.78834 19L12.3509 13.41L17.9135 19L19.3166 17.59L13.754 12L19.3166 6.41Z" fill="white"></path>
+					</mask>
+					<g mask="url(#maskClose)">
+						<rect x="0.409668" width="23.8823" height="24" fill="#FFFFFF"></rect>
+					</g>
+				</svg>
+			</div>
+			<!-- Image info, comments and meta -->
+			<div class="jp-carousel-info">
+				<div class="jp-carousel-info-footer">
+					<div class="jp-carousel-pagination-container">
+						<div class="jp-swiper-pagination swiper-pagination"></div>
+						<div class="jp-carousel-pagination"></div>
+					</div>
+					<div class="jp-carousel-photo-title-container">
+						<h2 class="jp-carousel-photo-caption"></h2>
+					</div>
+					<div class="jp-carousel-photo-icons-container">
+						<a href="https://www.jetsonhacks.com/nvidia-jetson-xavier-nx-gpio-header-pinout/#" class="jp-carousel-icon-btn jp-carousel-icon-info" aria-label="Toggle photo metadata visibility">
+							<span class="jp-carousel-icon">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="maskInfo" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="21" height="20">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M12.7537 2C7.26076 2 2.80273 6.48 2.80273 12C2.80273 17.52 7.26076 22 12.7537 22C18.2466 22 22.7046 17.52 22.7046 12C22.7046 6.48 18.2466 2 12.7537 2ZM11.7586 7V9H13.7488V7H11.7586ZM11.7586 11V17H13.7488V11H11.7586ZM4.79292 12C4.79292 16.41 8.36531 20 12.7537 20C17.142 20 20.7144 16.41 20.7144 12C20.7144 7.59 17.142 4 12.7537 4C8.36531 4 4.79292 7.59 4.79292 12Z" fill="white"></path>
+									</mask>
+									<g mask="url(#maskInfo)">
+										<rect x="0.8125" width="23.8823" height="24" fill="#FFFFFF"></rect>
+									</g>
+								</svg>
+							</span>
+						</a>
+												<a href="https://www.jetsonhacks.com/nvidia-jetson-xavier-nx-gpio-header-pinout/#" class="jp-carousel-icon-btn jp-carousel-icon-comments" aria-label="Toggle photo comments visibility">
+							<span class="jp-carousel-icon">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="maskComments" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="21" height="20">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M4.3271 2H20.2486C21.3432 2 22.2388 2.9 22.2388 4V16C22.2388 17.1 21.3432 18 20.2486 18H6.31729L2.33691 22V4C2.33691 2.9 3.2325 2 4.3271 2ZM6.31729 16H20.2486V4H4.3271V18L6.31729 16Z" fill="white"></path>
+									</mask>
+									<g mask="url(#maskComments)">
+										<rect x="0.34668" width="23.8823" height="24" fill="#FFFFFF"></rect>
+									</g>
+								</svg>
+
+								<span class="jp-carousel-has-comments-indicator" aria-label="This image has comments."></span>
+							</span>
+						</a>
+											</div>
+				</div>
+				<div class="jp-carousel-info-extra">
+					<div class="jp-carousel-info-content-wrapper">
+						<div class="jp-carousel-photo-title-container">
+							<h2 class="jp-carousel-photo-title"></h2>
+						</div>
+						<div class="jp-carousel-comments-wrapper">
+															<div id="jp-carousel-comments-loading">
+									<span>Loading Comments...</span>
+								</div>
+								<div class="jp-carousel-comments"></div>
+								<div id="jp-carousel-comment-form-container">
+									<span id="jp-carousel-comment-form-spinner">&nbsp;</span>
+									<div id="jp-carousel-comment-post-results"></div>
+																														<form id="jp-carousel-comment-form">
+												<label for="jp-carousel-comment-form-comment-field" class="screen-reader-text">Write a Comment...</label>
+												<textarea name="comment" class="jp-carousel-comment-form-field jp-carousel-comment-form-textarea" id="jp-carousel-comment-form-comment-field" placeholder="Write a Comment..."></textarea>
+												<div id="jp-carousel-comment-form-submit-and-info-wrapper">
+													<div id="jp-carousel-comment-form-commenting-as">
+																													<fieldset>
+																<label for="jp-carousel-comment-form-email-field">Email (Required)</label>
+																<input type="text" name="email" class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-email-field">
+															</fieldset>
+															<fieldset>
+																<label for="jp-carousel-comment-form-author-field">Name (Required)</label>
+																<input type="text" name="author" class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-author-field">
+															</fieldset>
+															<fieldset>
+																<label for="jp-carousel-comment-form-url-field">Website</label>
+																<input type="text" name="url" class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-url-field">
+															</fieldset>
+																											</div>
+													<input type="submit" name="submit" class="jp-carousel-comment-form-button" id="jp-carousel-comment-form-button-submit" value="Post Comment">
+												</div>
+											</form>
+																											</div>
+													</div>
+						<div class="jp-carousel-image-meta">
+							<div class="jp-carousel-title-and-caption">
+								<div class="jp-carousel-photo-info">
+									<h3 class="jp-carousel-caption" itemprop="caption description"></h3>
+								</div>
+
+								<div class="jp-carousel-photo-description"></div>
+							</div>
+							<ul class="jp-carousel-image-exif" style="display: none;"></ul>
+							<a class="jp-carousel-image-download" target="_blank" style="display: none;">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="3" y="3" width="19" height="18">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M5.84615 5V19H19.7775V12H21.7677V19C21.7677 20.1 20.8721 21 19.7775 21H5.84615C4.74159 21 3.85596 20.1 3.85596 19V5C3.85596 3.9 4.74159 3 5.84615 3H12.8118V5H5.84615ZM14.802 5V3H21.7677V10H19.7775V6.41L9.99569 16.24L8.59261 14.83L18.3744 5H14.802Z" fill="white"></path>
+									</mask>
+									<g mask="url(#mask0)">
+										<rect x="0.870605" width="23.8823" height="24" fill="#FFFFFF"></rect>
+									</g>
+								</svg>
+								<span class="jp-carousel-download-text"></span>
+							</a>
+							<div class="jp-carousel-image-map" style="display: none;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		</div>
+		<!-- `jetpack-carousel-swiper-css` is included in the concatenated jetpack.css -->
+<!-- `jetpack-carousel` is included in the concatenated jetpack.css -->
+<script type="text/javascript" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/hoverintent-js.min.js" id="hoverintent-js-js"></script>
+<script type="text/javascript" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/admin-bar.min.js" id="admin-bar-js"></script>
+<script type="text/javascript" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/photon.min.js" id="jetpack-photon-js"></script>
+<script type="text/javascript" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/comment-reply.min.js" id="comment-reply-js"></script>
+<script type="text/javascript" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/regenerator-runtime.min.js" id="regenerator-runtime-js"></script>
+<script type="text/javascript" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/wp-polyfill.min.js" id="wp-polyfill-js"></script>
+<script type="text/javascript" id="contact-form-7-js-extra">
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/www.jetsonhacks.com\/wp-json\/","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/index.js" id="contact-form-7-js"></script>
+<script type="text/javascript" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/intersection-observer.js" id="jetpack-lazy-images-polyfill-intersectionobserver-js"></script>
+<script type="text/javascript" id="jetpack-lazy-images-js-extra">
+/* <![CDATA[ */
+var jetpackLazyImagesL10n = {"loading_warning":"Images are still loading. Please cancel your print and try again."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/lazy-images.js" id="jetpack-lazy-images-js"></script>
+<script type="text/javascript" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/api.js" id="google-recaptcha-js"></script>
+<script type="text/javascript" id="wpcf7-recaptcha-js-extra">
+/* <![CDATA[ */
+var wpcf7_recaptcha = {"sitekey":"6LfNRoIUAAAAAAPPoAyEdXExsjPFy7dX678d5qYh","actions":{"homepage":"homepage","contactform":"contactform"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/index(1).js" id="wpcf7-recaptcha-js"></script>
+<script type="text/javascript" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/wp-embed.min.js" id="wp-embed-js"></script>
+<script type="text/javascript" id="jetpack-carousel-js-extra">
+/* <![CDATA[ */
+var jetpackSwiperLibraryPath = {"url":"https:\/\/www.jetsonhacks.com\/wp-content\/plugins\/jetpack\/_inc\/build\/carousel\/swiper-bundle.min.js"};
+var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"","lang":"en","ajaxurl":"https:\/\/www.jetsonhacks.com\/wp-admin\/admin-ajax.php","nonce":"95ed5927c5","display_exif":"0","display_comments":"1","display_geo":"1","single_image_gallery":"1","single_image_gallery_media_file":"","background_color":"black","comment":"Comment","post_comment":"Post Comment","write_comment":"Write a Comment...","loading_comments":"Loading Comments...","download_original":"View full size <span class=\"photo-size\">{0}<span class=\"photo-size-times\">\u00d7<\/span>{1}<\/span>","no_comment_text":"Please be sure to submit some text with your comment.","no_comment_email":"Please provide an email address to comment.","no_comment_author":"Please provide your name to comment.","comment_post_error":"Sorry, but there was an error posting your comment. Please try again later.","comment_approved":"Your comment was approved.","comment_unapproved":"Your comment is in moderation.","camera":"Camera","aperture":"Aperture","shutter_speed":"Shutter Speed","focal_length":"Focal Length","copyright":"Copyright","comment_registration":"0","require_name_email":"1","login_url":"https:\/\/www.jetsonhacks.com\/wp-login.php?redirect_to=https%3A%2F%2Fwww.jetsonhacks.com%2Fnvidia-jetson-xavier-nx-gpio-header-pinout%2F","blog_id":"1","meta_data":["camera","aperture","shutter_speed","focal_length","copyright"]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/jetpack-carousel.min.js" id="jetpack-carousel-js"></script>
+<script type="text/javascript">function initTwitCount(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://static1.twitcount.com/js/twitcount.js';fjs.parentNode.insertBefore(js,fjs)}}
+        var ssb_twit_count_init=!1;addEventListener('mouseover',function(event){if(!ssb_twit_count_init){initTwitCount(document,'script','twitcount_plugins')
+        ssb_twit_count_init=!0}})</script><script src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/e-202149.js" defer=""></script>
+<script>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:10.4',blog:'118036601',post:'12098',tz:'-8',srv:'www.jetsonhacks.com'} ]);
+	_stq.push([ 'clickTrackerInit', '118036601', '12098' ]);
+</script>
+		<div id="wpadminbar" class="nojq">
+							<a class="screen-reader-shortcut" href="https://www.jetsonhacks.com/nvidia-jetson-xavier-nx-gpio-header-pinout/#wp-toolbar" tabindex="1">Skip to toolbar</a>
+						<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar">
+				<ul id="wp-admin-bar-root-default" class="ab-top-menu"><li id="wp-admin-bar-wp-logo" class="menupop"><div class="ab-item ab-empty-item" tabindex="0" aria-haspopup="true"><span class="ab-icon" aria-hidden="true"></span><span class="screen-reader-text">About WordPress</span></div><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wp-logo-external" class="ab-sub-secondary ab-submenu"><li id="wp-admin-bar-wporg"><a class="ab-item" href="https://wordpress.org/">WordPress.org</a></li><li id="wp-admin-bar-documentation"><a class="ab-item" href="https://wordpress.org/support/">Documentation</a></li><li id="wp-admin-bar-support-forums"><a class="ab-item" href="https://wordpress.org/support/forums/">Support</a></li><li id="wp-admin-bar-feedback"><a class="ab-item" href="https://wordpress.org/support/forum/requests-and-feedback">Feedback</a></li></ul></div></li><li id="wp-admin-bar-bp-login"><a class="ab-item" href="https://www.jetsonhacks.com/wp-login.php?redirect_to=https%3A%2F%2Fwww.jetsonhacks.com%2Fnvidia-jetson-xavier-nx-gpio-header-pinout%2F">Log In</a></li><li id="wp-admin-bar-bp-register"><a class="ab-item" href="https://www.jetsonhacks.com/register/">Register</a></li><li id="wp-admin-bar-amp" class="menupop"><a class="ab-item" aria-haspopup="true" href="https://www.jetsonhacks.com/nvidia-jetson-xavier-nx-gpio-header-pinout/?amp" title="View AMP version"><span id="amp-admin-bar-item-status-icon" class="ab-icon amp-icon amp-link"></span> AMP</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-amp-default" class="ab-submenu"><li id="wp-admin-bar-amp-view"><a class="ab-item" href="https://www.jetsonhacks.com/nvidia-jetson-xavier-nx-gpio-header-pinout/?amp">View AMP version</a></li></ul></div></li></ul><ul id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu"><li id="wp-admin-bar-search" class="admin-bar-search"><div class="ab-item ab-empty-item" tabindex="-1"><form action="https://www.jetsonhacks.com/" method="get" id="adminbarsearch"><input class="adminbar-input" name="s" id="adminbar-search" type="text" value="" maxlength="150"><label for="adminbar-search" class="screen-reader-text">Search</label><input type="submit" class="adminbar-button" value="Search"></form></div></li></ul>			</div>
+					</div>
+
+		
+<img src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/g.gif" alt="" width="6" height="5" id="wpstats"><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><ins id="aswift_1_expand" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-table;"><ins id="aswift_1_anchor" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: block;"><iframe id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/ads(1).html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" allow="attribution-reporting" data-google-container-id="a!2" data-load-complete="true"></iframe></ins></ins></ins><iframe name="oauth2relay765710330" id="oauth2relay765710330" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/postmessageRelay.html" tabindex="-1" aria-hidden="true" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe><div><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/anchor.html" width="256" height="60" role="presentation" name="a-315vf7te86e" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/saved_resource(3).html"></iframe></div><div style="display: block; visibility: hidden; position: absolute; width: 106px; left: -10000px; top: -10000px;"><table cellpadding="0" cellspacing="0" dir="ltr" style="width:106px;" frame="void" rules="none" class=" gc-bubbleDefault pls-container"><tbody><tr class="gc-reset"><td class="pls-topLeft gc-reset"><img class="gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/border_3.gif"></td><td class="pls-topTail gc-reset"><img class="pls-tailbottom gc-reset" style="width:15px !important; height:9px !important; max-width: 15px !important; max-height: 9px !important;" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/spacer.gif"><img class="pls-spacerbottom gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/spacer.gif"></td><td class="pls-topRight gc-reset"><img class="gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/border_3.gif"></td></tr><tr class="gc-reset"><td class="pls-vertShimLeft gc-reset"><img class="gc-reset" style="width:1px !important; height:4px !important; max-width: 1px !important; max-height: 4px !important;" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/spacer.gif"></td><td class="pls-vertShim gc-reset"><img class="gc-reset" style="width:1px !important; height:4px !important; max-width: 1px !important; max-height: 4px !important;" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/spacer.gif"></td><td class="pls-vertShimRight gc-reset"><img class="pls-dropTR gc-reset" style="width:5px !important; height:4px !important; max-width: 5px !important; max-height: 4px !important;" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/spacer.gif"></td></tr><tr class="gc-reset"><td class="pls-contentLeft gc-reset"><img class="pls-tailright gc-reset" style="width:9px !important; height:15px !important; max-width: 9px !important; max-height: 15px !important;" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/spacer.gif"><img class="pls-spacerright gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/spacer.gif"></td><td class="pls-contentWrap gc-reset"><div class="goog-bubble-content gc-reset"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="margin:0px;position:absolute;z-index:1;border-style:none;outline:none;width:100px;" tabindex="0" vspace="0" width="100%" id="I0_1639400884668" name="I0_1639400884668" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/subscribe_embed(1).html"></iframe></div></td><td class="pls-dropRight gc-reset"><img class="pls-tailleft gc-reset" style="width:12px !important; height:19px !important; max-width: 12px !important; max-height: 19px !important;" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/spacer.gif"><img class="pls-spacerleft gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/spacer.gif"></td></tr><tr class="gc-reset"><td class="pls-bottomLeft gc-reset"><img class="gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/border_3.gif"></td><td class="gc-reset"><table cellpadding="0" cellspacing="0" style="width:100%" class="gc-reset"><tbody><tr class="gc-reset"><td class="pls-vert gc-reset"><img class="pls-dropBL gc-reset" style="width:4px !important; height:5px !important; max-width: 4px !important; max-height: 5px !important;" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/spacer.gif"></td><td class="pls-dropBottom gc-reset"><img class="pls-tailtop gc-reset" style="width:19px !important; height:13px !important; max-width: 19px !important; max-height: 13px !important;" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/spacer.gif"><img class="pls-spacertop gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/spacer.gif"></td></tr></tbody></table></td><td class="pls-vert gc-reset"><img class="pls-dropBR gc-reset" style="width:5px !important; height:5px !important; max-width: 5px !important; max-height: 5px !important;" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/spacer.gif"></td></tr></tbody></table></div><iframe src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/aframe.html" width="0" height="0" style="display: none;"></iframe><iframe scrolling="no" frameborder="0" allowtransparency="true" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/widget_iframe.21f942bb866c2823339b839747a0c50c.html" title="Twitter settings iframe" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/saved_resource(4).html"></iframe></body><iframe id="google_esf" name="google_esf" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/zrt_lookup.html" style="display: none;"></iframe><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important; width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; clear: none !important; float: none !important; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; position: fixed !important; vertical-align: baseline !important; visibility: visible !important; z-index: 2147483647 !important; background: transparent !important;" aria-hidden="true" data-ad-status="filled" data-vignette-loaded="true"><ins id="aswift_2_expand" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none !important; height: 100vh !important; width: 100vw !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-table !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;"><ins id="aswift_2_anchor" style="border: none !important; height: 100vh !important; width: 100vw !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;"><iframe id="aswift_2" name="" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="" height="" frameborder="0" src="./NVIDIA Jetson Xavier NX GPIO Header Pinout – JetsonHacks_files/zrt_lookup(1).html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" allow="attribution-reporting" data-google-container-id="a!3" data-google-query-id="CIeuq5rs4PQCFdIFXAodDSwFcQ" data-load-complete="true" style="width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; position: absolute !important; clear: none !important; display: inline !important; float: none !important; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; vertical-align: baseline !important; visibility: visible !important; z-index: auto !important;"></iframe></ins></ins></ins></html>

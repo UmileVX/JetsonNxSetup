@@ -1,0 +1,67 @@
+diff --git a/nvdsinfer_custom_impl_Yolo/nvdsinfer_yolo_engine.cpp b/nvdsinfer_custom_impl_Yolo/nvdsinfer_yolo_engine.cpp
+index 1c383fc..0f4efbc 100644
+--- a/nvdsinfer_custom_impl_Yolo/nvdsinfer_yolo_engine.cpp
++++ b/nvdsinfer_custom_impl_Yolo/nvdsinfer_yolo_engine.cpp
+@@ -107,7 +107,7 @@ bool NvDsInferYoloCudaEngineGet(nvinfer1::IBuilder * const builder,
+     }
+ 
+     Yolo yolo(networkInfo);
+-    cudaEngine = yolo.createEngine (builder);
++    cudaEngine = yolo.createEngine (builder, builderConfig);
+     if (cudaEngine == nullptr)
+     {
+         std::cerr << "Failed to build cuda engine on "
+diff --git a/nvdsinfer_custom_impl_Yolo/yolo.cpp b/nvdsinfer_custom_impl_Yolo/yolo.cpp
+index 7e01500..9b1ef67 100644
+--- a/nvdsinfer_custom_impl_Yolo/yolo.cpp
++++ b/nvdsinfer_custom_impl_Yolo/yolo.cpp
+@@ -44,7 +44,8 @@ Yolo::~Yolo()
+     destroyNetworkUtils();
+ }
+ 
+-nvinfer1::ICudaEngine *Yolo::createEngine (nvinfer1::IBuilder* builder)
++nvinfer1::ICudaEngine *Yolo::createEngine (
++    nvinfer1::IBuilder* builder, nvinfer1::IBuilderConfig* config)
+ {
+     assert (builder);
+ 
+@@ -59,7 +60,6 @@ nvinfer1::ICudaEngine *Yolo::createEngine (nvinfer1::IBuilder* builder)
+ 
+     // Build the engine
+     std::cout << "Building the TensorRT Engine..." << std::endl;
+-    nvinfer1::IBuilderConfig *config = builder->createBuilderConfig();
+     nvinfer1::ICudaEngine * engine = builder->buildEngineWithConfig(*network, *config);
+     if (engine) {
+         std::cout << "Building complete!" << std::endl;
+@@ -69,7 +69,6 @@ nvinfer1::ICudaEngine *Yolo::createEngine (nvinfer1::IBuilder* builder)
+ 
+     // destroy
+     network->destroy();
+-    delete config;
+     return engine;
+ }
+ 
+diff --git a/nvdsinfer_custom_impl_Yolo/yolo.h b/nvdsinfer_custom_impl_Yolo/yolo.h
+index 490605f..9dd32a5 100644
+--- a/nvdsinfer_custom_impl_Yolo/yolo.h
++++ b/nvdsinfer_custom_impl_Yolo/yolo.h
+@@ -73,7 +73,8 @@ public:
+     }
+     NvDsInferStatus parseModel(nvinfer1::INetworkDefinition& network) override;
+ 
+-    nvinfer1::ICudaEngine *createEngine (nvinfer1::IBuilder* builder);
++    nvinfer1::ICudaEngine *createEngine (
++	       nvinfer1::IBuilder* builder, nvinfer1::IBuilderConfig* config);
+ 
+ protected:
+     const std::string m_NetworkType;
+diff --git a/yolov3-calibration.table.trt7.0 b/yolov3-calibration.table.trt7.0
+index 429073a..934b547 100644
+--- a/yolov3-calibration.table.trt7.0
++++ b/yolov3-calibration.table.trt7.0
+@@ -1,4 +1,4 @@
+-TRT-7000-EntropyCalibration2
++TRT-8000-EntropyCalibration2
+ data: 3c008912
+ (Unnamed Layer* 0) [Convolution]_output: 3c575e9d
+ (Unnamed Layer* 1) [Scale]_output: 3da4d54d

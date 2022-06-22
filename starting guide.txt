@@ -1,0 +1,97 @@
+1. SD -> SSD
+https://www.jetsonhacks.com/2020/05/29/jetson-xavier-nx-run-from-ssd/
+
+** boot from external drive **
+https://forums.developer.nvidia.com/t/boot-from-external-drive/182883
+https://elinux.org/Jetson/L4T/Boot_From_External_Device
+
+2-2. DOWNLOAD DEEPSTREAM 5.1
+https://developer.nvidia.com/embedded/deepstream-on-jetson-downloads-archived
+
+** docs **
+https://docs.nvidia.com/metropolis/deepstream-archive.html
+** for issue **
+https://forums.developer.nvidia.com/t/jetpack-4-6-and-deepstream-5-1-install-issues/187161
+
+2-2. DOWNLOAD DEEPSTREAM 6.0
+
+
+3. QUICKSTART GUIDE
+https://docs.nvidia.com/metropolis/deepstream/5.1/dev-guide/text/DS_Quickstart.html  [5.1]
+https://docs.nvidia.com/metropolis/deepstream/6.0/dev-guide/text/DS_Quickstart.html  [6.0]
+
+**FOR Libnvrtc.so.10.2 not found ERROR**
+sudo apt install cuda-nvrtc-10-2
+
+**FOR DEEPSTREAM 6.0, NEED TO DOWNLOAD PATCH**
+https://forums.developer.nvidia.com/t/deepstream-6-yolo-performance-issue/194238/21
+
+$ cd /opt/nvidia/deepstream/deepstream-6.0/sources/objectDetector_Yolo/
+$ patch -p1 < DS6.0GA_objectDetector_Yolo_perf_regression.patch
+$ export CUDA_VER= // specify the CUDA version, e.g. export CUDA_VER=11.4
+$ make -C nvdsinfer_custom_impl_Yolo
+
+**IF NVCC IS NOT FOUND**
+sudo apt-get update
+ sudo apt-get -y install cuda-toolkit-10-2 
+https://forums.developer.nvidia.com/t/cuda-nvcc-not-found/118068
+
+in ./bashrc
+export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64\
+                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+
+/opt/nvidia 로 이동한 뒤, chown 사용:
+sudo chown -R kogas-nx:kogas-nx ./deepstream
+
+
+4. DOWNLOAD JTOP
+https://makingrobot.tistory.com/88
+https://github.com/rbonghi/jetson_stats
+
+sudo apt-get install git cmake
+sudo apt-get install python3-dev libhdf5-serial-dev hdf5-tools libatlas-base-dev gfortran python3-pip
+pip3 install --upgrade pip
+
+5. Python x Yolo
+https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_Python_Sample_Apps.html
+https://github.com/NVIDIA-AI-IOT/deepstream_python_apps/tree/master/bindings
+
+https://forums.developer.nvidia.com/t/deepstrem-5-0-python-yolo/126340
+
+**workspace error**
+https://forums.developer.nvidia.com/t/some-tactics-do-not-have-sufficient-workspace-memory-to-run-increasing-workspace-size-may-increase-performance-please-check-verbose-output/126877/3
+https://github.com/marcoslucianops/DeepStream-Yolo/issues/28
+
+**YOLO error 7**
+https://forums.developer.nvidia.com/t/yolov3-detector-with-python-apps/141474/9
+
+**YOLO delay error**
+https://forums.developer.nvidia.com/t/error-a-lot-of-buffers-are-being-dropped-when-running-ds-sdk-pyhon-sample-ipcamera-on-nano/110886/5
+
+
+6. KILL PROCESS
+https://stackoverflow.com/questions/11203201/how-to-stop-infinite-loop-in-bash-script-gracefully
+
+7. DOWNLOAD NODE
+wget https://nodejs.org/dist/v12.13.0/node-v12.13.0-linux-arm64.tar.xz
+tar -xJf node-v12.13.0-linux-arm64.tar.xz
+cd node-v12.13.0-linux-arm64
+sudo cp -R * /usr/local/
+node -v
+npm -v
+
+8. No such file
+[gst.h]
+sudo apt install libjson-glib-dev
+
+https://forums.developer.nvidia.com/t/no-such-file-or-directory-include-gst-gst-h/156423/3
+
+[rtsp-server.h]
+sudo apt install libgstrtspserver-1.0-dev
+
+https://forums.developer.nvidia.com/t/build-deepstream4-0-sample-app-failed-on-jetson-nano/80435
+
+
+
