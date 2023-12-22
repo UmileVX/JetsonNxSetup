@@ -43,7 +43,7 @@ export LD_LIBRARY_PATH=/usr/local/cuda/lib64\
 
 
 /opt/nvidia 로 이동한 뒤, chown 사용:
-sudo chown -R kogas-nx:kogas-nx ./deepstream
+sudo chown -R nonia-nx:nonia-nx ./deepstream
 
 
 4. DOWNLOAD JTOP
